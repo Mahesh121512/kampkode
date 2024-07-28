@@ -1,0 +1,76 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color:white;
+  background-color: black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; /* Enable scrolling */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.footer-container::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
+.left-section, .right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-section {
+  overflow-y: auto; /* Enable scrolling for the left section */
+  max-height: 100%; /* Ensure the section takes full height of the container */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  padding:30px;
+}
+
+.left-section::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* To align content vertically */
+}
+
+.rectangle {
+  width: 50%;
+  border-radius: 10px;
+  min-height: 200px; /* Minimum height to ensure it starts with a size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease; /* Smooth transition when height changes */
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Enable scrolling for mobile view */
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .rectangle {
+    min-height: 150px; /* Adjust size for mobile view */
+  }
+}

@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 255, 0.5);
+    border-radius: 20px;
+    margin:50px;
+
+  }
+  
+  .navbar-heading {
+    font-size: 24px;
+  }
+  
+  .navbar-heading .blue {
+    color: blue;
+  }
+  
+  .navbar-heading .black {
+    color: black;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-menu li {
+    cursor: pointer;
+  }
+  
+  .login-button, .signup-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .signup-button {
+    background-color: rgb(82, 82, 246);
+    color: white;
+  }
+  
+.login-button {
+    background-color: transparent;
+    color: rgb(135, 145, 255);
+    font-weight: 600;
+    border: 1px solid black;
+}

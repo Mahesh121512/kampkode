@@ -1,0 +1,141 @@
+/* src/components/middle/Middle.css */
+
+.middle-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .step-up-circles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .span{
+    font-weight: bold;
+  }
+  .step-up-circles .circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed #ccc;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .step-up-circles .circle {
+    border:  blue;
+    background-color: rgba(0, 0, 255, 0.1); /* Light blue background for hover effect */
+  }
+  
+  .step-up-circles .circle:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    border-color: #ccc;
+  }
+  
+  .step-up-circles .circle:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    border-color: #bbb;
+  }
+  
+  .step-up-circles .circle:nth-child(3) {
+    width: 500px;
+    height: 500px;
+    border-color: #aaa;
+  }
+  
+  .step-up-circles .circle:nth-child(4) {
+    width: 700px;
+    height: 700px;
+    border-color: #999;
+  }
+  
+  .step-up-circles .circle:nth-child(5) {
+    width: 800px;
+    height: 800px;
+    border-color: #888;
+  }
+  
+  .step-up-circles .circle:nth-child(6) {
+    width: 1000px;
+    height: 1000px;
+    border-color: #777;
+  }
+  
+  .orbiting-logo {
+    position: absolute;
+  }
+  
+  .react-logo {
+    top: 30%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .html-logo {
+    top: 60%;
+    left: 60%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .css-logo {
+    top: 40%;
+    right: 40%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .start-learning-button,
+  .join-now-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .start-learning-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .join-now-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
